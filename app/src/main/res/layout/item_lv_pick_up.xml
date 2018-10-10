@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_pick_statu"
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取件"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pick_item_time"
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="预约取：今天17:00" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_pick_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_bule"
+            android:gravity="center"
+            android:text="取"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_pick_info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隔壁老六" />
+
+            <TextView
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="湘雅附中(开福区湘雅路78号)" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_wait_pick_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_address" />
+
+        <ImageView
+            android:id="@+id/img_wait_pick_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_wait_pick_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon_link_phone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/tv_send_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_orange"
+            android:gravity="center"
+            android:text="送"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_send_info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵海波" />
+
+            <TextView
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="天心区保利国际B1栋2321" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/img_wait_send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_address" />
+
+        <ImageView
+            android:id="@+id/img_wait_send_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_wait_send_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon_link_phone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="23dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <Button
+            android:id="@+id/btn_to_home"
+            style="@style/text_style_white_14"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/linkstar_btn_bg_normal"
+            android:gravity="center"
+            android:text="待上门" />
+
+        <Button
+            android:id="@+id/btn_to_way"
+            style="@style/text_style_blue_14"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/btn_to_home"
+            android:background="@drawable/btn_bg_blue_line"
+            android:drawableLeft="@drawable/icon_navigation"
+            android:gravity="center"
+            android:text="导航" />
+    </RelativeLayout>
+
+</LinearLayout>

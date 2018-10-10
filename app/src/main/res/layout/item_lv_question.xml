@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_style_light_black_14"
+        android:gravity="left"
+        android:paddingLeft="18dp"
+        android:paddingTop="18dp"
+        android:text="阿里巴巴中国市场的诚信体系主要包括"/>
+
+
+    <TextView
+        android:id="@+id/tv_question_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        style="@style/text_style_gray_14"
+        android:gravity="left"
+        android:paddingBottom="18dp"
+        android:text="阿里巴巴作为全球最大的网上贸易市场，拥有1530万注册商人会员（数据截止2006年6月，中文网站1284万，英文网站246万），是一个极为注重诚信的市场，诚信的商人在此可以获得商业机会达成交易，不诚信的商人和不诚信的行为会被坚决打击、曝光和取缔！"/>
+
+
+</LinearLayout>

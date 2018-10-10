@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫码领红包"
+        android:layout_marginTop="18dp"
+        style="@style/text_style_light_black_16"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/test_qr_code"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            style="@style/text_style_gray_14"
+            android:padding="3dp"
+            android:text="or"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享给好友或朋友圈"
+        android:layout_marginTop="20dp"
+        style="@style/text_style_light_black_14"/>
+
+    <ImageView
+        android:id="@+id/img_share_wx_now"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_share_wx"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朋友圈"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="18dp"
+        style="@style/text_style_light_black_14"/>
+</LinearLayout>

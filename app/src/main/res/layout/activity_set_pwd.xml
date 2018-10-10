@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_gray"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_base_back"
+            style="@style/BackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/text_style_light_black_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="密码设置"
+            android:textSize="@dimen/title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_change_input_phone"
+                style="@style/text_style_light_black_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入账号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/et_change_input_code"
+                style="@style/text_style_light_black_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <com.linkstar.app.yxgjqs.view.CountdownButton
+                android:id="@+id/cb_change_get_code"
+                style="@style/text_style_white_14"
+                android:layout_width="78dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/linkstar_btn_bg_normal"
+                android:text="获取验证码" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/et_change_input_pwd"
+                style="@style/text_style_light_black_14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入新密码"
+                android:maxLength="20"
+                android:inputType="textPassword"/>
+
+            <CheckBox
+                android:id="@+id/cb_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:button="@drawable/selector_checkbox_pwd_showing" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_change_ok"
+        style="@style/text_style_white_16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/linkstar_btn_bg_normal"
+        android:text="确  定"
+        android:textStyle="bold" />
+
+</LinearLayout>

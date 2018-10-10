@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_gray"
+    android:orientation="vertical"
+    tools:context="com.linkstar.app.yxgjqs.activity.PersonalActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/img_personal_title_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_base_back_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/icon_arrow_back_white" />
+
+            <ImageView
+                android:id="@+id/img_personal_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
+                android:src="@drawable/icon_personal_settings" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lLayout_edit_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.linkstar.app.yxgjqs.view.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/rest_icon_personal_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/icon_edit_white"
+                android:text="13723865888"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout_my_data"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_my_data"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:text="我的业绩" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right_gray" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout_link_kf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_link_kf"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:text="联系客服" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right_gray" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout_question"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_question"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:text="常见问题" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right_gray" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout_msg_back"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            style="@style/text_style_light_black_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_msg_back"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:text="意见反馈" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_arrow_right_gray" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_exit_login"
+            style="@style/text_style_white_16"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/linkstar_btn_bg_normal"
+            android:text="退出登录"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

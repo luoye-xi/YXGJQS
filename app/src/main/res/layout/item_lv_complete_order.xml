@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_complete_order_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送件"
+            android:layout_centerVertical="true"
+            style="@style/text_style_light_black_14"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_complete_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成时间 2018-01-02 10:50"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            style="@style/text_style_light_black_14"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_pick_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_bule"
+            android:gravity="center"
+            android:text="取"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_pick_info"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_complete_order_get_name"
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隔壁老六" />
+
+            <TextView
+                android:id="@+id/tv_complete_order_get_add"
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="湘雅附中(开福区湘雅路78号)" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/tv_send_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_orange"
+            android:gravity="center"
+            android:text="送"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_send_info"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_complete_order_send_name"
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵海波" />
+
+            <TextView
+                android:id="@+id/tv_complete_order_send_add"
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="天心区保利国际B1栋2321" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout_complete_order_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+        <TextView
+            android:id="@+id/tv_complete_order_cancle_reson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="取消原因：客户取消"/>
+
+        <Button
+            android:id="@+id/btn_to_evaluate"
+            android:layout_width="68dp"
+            android:layout_height="28dp"
+            android:background="@drawable/linkstar_btn_bg_normal"
+            android:text="待评价"
+            android:visibility="gone"
+            style="@style/text_style_white_14"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+    
+
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="订单编号:130232342345" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="送件"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_style_gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务类型：洗衣" />
+
+                <TextView
+                    style="@style/text_style_gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户姓名：赵海波" />
+
+                <TextView
+                    style="@style/text_style_gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户电话：13723868888" />
+
+                <TextView
+                    style="@style/text_style_gray_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取件时间：2018-06-21 13:02之前取" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                style="@style/text_style_white_12"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/background_orange_3dp"
+                android:text="注" />
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="衣服有点破，帮我缝下"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_pick_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_bule"
+            android:gravity="center"
+            android:text="取"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_pick_info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隔壁老六" />
+
+            <TextView
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="湘雅附中(开福区湘雅路78号)" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_re_order_pick_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_address" />
+
+        <ImageView
+            android:id="@+id/img_re_order_pick_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/img_re_order_pick_address"
+            android:src="@drawable/icon_link_phone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F0F0F0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_send_info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/img_circular_orange"
+            android:gravity="center"
+            android:text="送"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_send_info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_style_light_black_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赵海波" />
+
+            <TextView
+                style="@style/text_style_gray_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="湘雅附中(开福区湘雅路78号)" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_re_order_send_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_address" />
+
+        <ImageView
+            android:id="@+id/img_re_order_send_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/img_re_order_send_address"
+            android:src="@drawable/icon_link_phone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_refuse_order"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="拒单"
+            style="@style/text_style_white_14"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/linkstar_btn_bg_normal"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="接单"
+            android:layout_marginLeft="5dp"
+            style="@style/text_style_blue_14"
+            android:textStyle="bold"
+            android:background="@drawable/btn_bg_blue_line"/>
+    </LinearLayout>
+</LinearLayout>
